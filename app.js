@@ -19,4 +19,7 @@ $(document).ready(function() {
     // Llama a la función al cargar la página y en eventos de desplazamiento
     activateAnimations();
     $(window).scroll(activateAnimations);
-  });
+
+
+});
+

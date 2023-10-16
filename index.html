@@ -15,7 +15,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css">
+ -->
+
     <script src="code.jquery.com_jquery-3.7.1.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -29,9 +33,9 @@
       <div class="container-fluid bg-1">
         <div class="row">
           <div class="col-12">
-            <nav class="navbar navbar-expand-lg fixed-top bg-1">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+            <nav class="navbar navbar-expand-lg fixed-top bg-2">
+              <div class="container">
+                <a class="navbar-brand" href="/">Navbar</a>
                 <button
                   class="navbar-toggler"
                   type="button"
@@ -49,15 +53,15 @@
                 >
                   <ul class="navbar-nav nv">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#ban"
+                      <a class="nav-link active" aria-current="page" href="#section1"
                         >Inicio</a
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#viaje">Viajes</a>
+                      <a class="nav-link" href="#section2">Viajes</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
+                      <a class="nav-link" href="#section3">Autores</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link disabled" aria-disabled="true"
@@ -73,7 +77,9 @@
       </div>
     </div>
 
-    <div class="main-conf animate-section" id="ban">
+
+    <div id="fullpage">
+    <div class="section-pilar main-conf animate-section bg-linear-pilar" id="section1">
       <div class="row justify-content-center align-items-center">
         <div class="col-12 col-md-7 text-center">
           <h1 class="animate-on-scroll" data-animation="animate__backInLeft">
@@ -95,44 +101,58 @@
             src="./img/banner.png"
             width="100%"
             alt=""
-            class="animate-on-scroll" data-animation="animate__fadeInUp"
+            class="animate-on-scroll img-fluid" data-animation="animate__fadeInUp"
           />
         </div>
       </div>
     </div>
 
+    
     <section
-      class="section section-viajes main-conf bg-1 animate-section"
-      id="viaje"
-      data-anchor="slide-2"
-    >
+    class="section-pilar container-fluid main-conf bg-3"
+    id="section2"
+    data-anchor="slide-2"
+  >
+    <div class="container">
+      <div
+        class="card-body shadow-lg bg-linear-viaje px-5 py-5 animate-on-scroll" data-animation="animate__fadeInUp"
+      >
+        <div class="row">
+          <div class="col-12 col-md-7 text-center">
+            <h1>
+              Pilar, una vista a un mundo maravilloso
+            </h1>
+            <p class="mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              ducimus amet quia aliquid sunt fuga sed enim nisi magni quo.
+            </p>
+            <a
+              href="http://127.0.0.1:5500/pestaña2.html"
+              target="_blank"
+              class="btn btn-color mt-sm-2 mt-md-5"
+              >Mas informacion</a
+            >
+          </div>
+          <div class="col-12 col-md-5">
+            <img src="./img/travel.png" width="100%" alt="" class="mt-sm-5" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section-pilar autores main-conf bg-1" id="section3">
       <div class="container">
-        <div
-          class="card-body shadow-lg bg-1 px-5 py-5 animate-on-scroll" data-animation="animate__fadeInUp"
-        >
-          <div class="row">
-            <div class="col-12 col-md-7 text-center">
-              <h1>
-                Pilar, una vista a un mundo maravilloso
-              </h1>
-              <p class="mt-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-                ducimus amet quia aliquid sunt fuga sed enim nisi magni quo.
-              </p>
-              <a
-                href="http://127.0.0.1:5500/pestaña2.html"
-                target="_blank"
-                class="btn btn-color mt-sm-2 mt-md-5"
-                >Mas informacion</a
-              >
-            </div>
-            <div class="col-12 col-md-5 ps-3">
-              <img src="./img/travel.png" width="100%" alt="" />
-            </div>
+        <div class="row">
+          <div class="col-12">
+            <h2>Autores</h2>
           </div>
         </div>
       </div>
     </section>
+  </div>
+
+
 
     <script src="app.js"></script>
   </body>
