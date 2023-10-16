@@ -1,0 +1,49 @@
+:root {
+    --blue: #7EB6D9;
+    --green: #667302;
+    --yellow: #F29F05;
+    --orange: #F28705;
+    --brown: #A68160;
+    --purple: #8B5CF6;
+    --pink: #EC4899;
+    --gray: #9CA3AF;
+    --black: #1F2937;
+    --size: 23rem;
+
+    --brown2: #535E73;
+    --green2: #0D8B8C;
+    --orange2: #F09D6D;
+    --pink2: #F08680;
+
+    --banner-color: #fbe7d4;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.main-conf {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-1{
+    background-color: var(--banner-color);
+}
+
+
+.btn-color{
+    background-color: var(--pink2);
+    color: var(--banner-color);
+    box-shadow: 4px 5px 7px 1px var(--orange2);
+    
+}
+.btn-color:hover{
+    background-color: var(--banner-color);
+    color: var(--pink2);
+    box-shadow: 16px 16px 12px var(--orange2);
+    border-color: var(--pink);
+    
+
+}
