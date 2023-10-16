@@ -21,6 +21,17 @@
 html {
     scroll-behavior: smooth;
 }
+.animate-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    will-change: opacity, transform;
+  }
+  
+.animate-section.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 .main-conf {
     height: 100vh;
