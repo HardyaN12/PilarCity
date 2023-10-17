@@ -1,25 +1,19 @@
-$(document).ready(function() {
-    // Función para activar animaciones en los elementos visibles en la pantalla
-    function activateAnimations() {
-      $(".animate-section").each(function() {
-        var elementTop = $(this).offset().top;
-        var elementHeight = $(this).outerHeight();
-        var windowHeight = $(window).height();
-        var scroll = $(window).scrollTop();
-        
-        if (scroll > elementTop - windowHeight + elementHeight / 2) {
-          $(this).addClass("active");
-          $(this).find(".animate-on-scroll").each(function() {
-            $(this).addClass("animate__animated").addClass($(this).data("animation"));
-          });
-        }
-      });
-    }
-  
-    // Llama a la función al cargar la página y en eventos de desplazamiento
-    activateAnimations();
-    $(window).scroll(activateAnimations);
 
+// Animación para elementos con la clase "animate-on-scroll"
+const animateOnScroll = () => {
+  const elements = document.querySelectorAll('.animate-on-scroll');
 
-});
+  elements.forEach((element) => {
+    gsap.from(element, {
+      opacity: 0,
+      x: -50, // Cambia el valor para ajustar la dirección de entrada
+      scrollTrigger: {
+        trigger: element,
+        start: 'top 80%', // Inicia la animación cuando el elemento está a un 80% de la parte superior de la ventana
+      },
+    });
+  });
+};
 
+// Llama a la función para aplicar animaciones al cargar la página
+animateOnScroll();
