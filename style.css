@@ -18,7 +18,7 @@ body {
   background-repeat: repeat; /* Opciones: repeat, repeat-x, repeat-y, no-repeat */
 }
 .bg-banner {
-  background-image: url("/img/banner2.jpg");
+  background-image: url("img/banner2.jpg");
   background-blend-mode: screen;
   background-size: cover; /* Opciones: repeat, repeat-x, repeat-y, no-repeat */
   height: 50vh;
