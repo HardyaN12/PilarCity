@@ -13,14 +13,16 @@
 .bg-img {
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
-body {
+.bg-body {
   background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png");
   background-repeat: repeat; /* Opciones: repeat, repeat-x, repeat-y, no-repeat */
 }
 .bg-banner {
-  background-image: url("/img/banner2.jpg");
+  background-image: url("img/banner2.jpg");
   background-blend-mode: screen;
-  background-size: cover; /* Opciones: repeat, repeat-x, repeat-y, no-repeat */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 50vh;
 }
 
@@ -32,3 +34,19 @@ body {
 {
   background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%)
 }
+
+
+/* Estilos personalizados para Historias */
+.bg-historia-banner {
+  background-image: url("img/historia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.bg-header
+{
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
