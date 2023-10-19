@@ -26,6 +26,16 @@
   height: 50vh;
 }
 
+.banner-autor {
+  background-color: #FF9A8B;
+  background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);  
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
 .lg-1 {
   background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
 }
