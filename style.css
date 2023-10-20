@@ -1,5 +1,5 @@
 .viewport {
-  height: 100vh;
+  height: 40vh;
 }
 
 .parrafo {
@@ -10,9 +10,7 @@
   background-repeat: space;
 }
 
-.bg-img {
-  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-}
+
 .bg-body {
   background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png");
   background-repeat: repeat; /* Opciones: repeat, repeat-x, repeat-y, no-repeat */
@@ -24,6 +22,16 @@
   background-size: cover;
   background-position: center;
   height: 50vh;
+}
+
+.banner-autor {
+  background-color: #FF9A8B;
+  background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);  
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
 }
 
 .lg-1 {
@@ -38,11 +46,21 @@
 
 /* Estilos personalizados para Historias */
 .bg-historia-banner {
-  background-image: url("img/historia.jpg");
+  background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+.bg-personaje {
+  background-image: url("img/bg-personajes.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 50vh;
+}
+.bg-img {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
 .bg-header
@@ -50,3 +68,15 @@
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
+.text-titulo
+{
+  font-size: 3.5rem !important;
+}
+
+.feedback
+{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

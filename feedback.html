@@ -23,7 +23,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="bg-body">
     <header>
       <nav
         class="navbar navbar-expand-lg fixed-top shadow-sm bg-header"
@@ -48,10 +48,10 @@
                 <a class="nav-link" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="historia.html">Historia</a>
+                <a class="nav-link" href="personajes.html">Personajes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="autores.html">Autores</a>
+                <a class="nav-link" href="turismo.html">Turismo</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="feedback.html">Feedback</a>
@@ -62,8 +62,28 @@
       </nav>
     </header>
 
-    <main>
-      <h1>Conctactanos</h1>
+    <main class="feedback">
+      <div class="container">
+        <div class="row">
+          <div class="col-5 offset-3">
+            <form action="mailto:ab279299@gmail.com" method="post" enctype="text/plain">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+                <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary px-5 fs-5">Enviar</button>
+              </div>
+            </form>
+            
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
