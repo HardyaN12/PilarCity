@@ -62,28 +62,75 @@
       </nav>
     </header>
 
-    <main class="feedback">
-      <div class="container">
-        <div class="row">
-          <div class="col-5 offset-3">
-            <form action="mailto:ab279299@gmail.com" method="post" enctype="text/plain">
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required />
-                <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-              </div>
-              <div class="col-12 text-center">
-                <button type="submit" class="btn btn-primary px-5 fs-5">Enviar</button>
-              </div>
-            </form>
-            
+
+<!-- Modal -->
+<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-center mx-auto" id="exampleModalLabel">Envianos un mensaje</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="mailto:ab279299@gmail.com" method="post" enctype="text/plain">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+            <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary px-5 fs-5">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container my-sm-5">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col">
+        <div class="px-4 pt-5 my-5 text-center">
+          <h1 class="display-4 fw-bold">Equipo ICA</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead">
+              Comentanos hasta ahora que teb parecio esta aventura en nuestra página web
+            </p>
+            <div
+              class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5"
+            >
+              <a
+                href="https://www.instagram.com/arii_barb/?utm_source=ig_web_button_share_sheet&igshid=ZDNlZDc0MzIxNw=="
+                class="btn btn-primary btn-ig btn-lg px-4 me-sm-3"
+                target="_blank"
+                >Nuestro Instagram
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="feedback.html"
+                type="button"
+                class="btn btn-outline-secondary btn-lg px-4"
+                data-bs-toggle="modal" 
+                data-bs-target="#formModal"
+                >
+                Envianos un Email
+                <i class="fab fa-solid fa-envelope"></i>
+              </a>
+                
+            </div>
+          </div>
+          <div class="overflow-hidden">
+            <div class="container px-5">
+              <img src="img/travel.png" class="img-fluid" alt="Example image">
+            </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </div>
   </body>
 </html>
